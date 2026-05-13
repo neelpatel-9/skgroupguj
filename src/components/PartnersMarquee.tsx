@@ -111,10 +111,11 @@ function MarqueeRow({ items, reverse, duration }: { items: Partner[]; reverse: b
     >
       <div
         ref={trackRef}
-        className={`marquee-track flex gap-6 w-max cursor-grab active:cursor-grabbing ${paused ? "marquee-paused" : ""}`}
+        className={`marquee-track flex gap-6 w-max cursor-grab active:cursor-grabbing touch-pan-y ${paused ? "marquee-paused" : ""}`}
         style={{
           animationDuration: `${duration}s`,
           animationDirection: reverse ? "reverse" : "normal",
+          touchAction: "pan-y",
         }}
       >
         {doubled.map((p, i) => (
