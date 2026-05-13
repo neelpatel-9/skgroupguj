@@ -6,6 +6,7 @@ import {
   Target, Lightbulb, Shield, Heart, ArrowRight, CheckCircle2
 } from "lucide-react";
 import { PartnersMarquee } from "@/components/PartnersMarquee";
+import skLogo from "@/assets/sk-group-logo.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
