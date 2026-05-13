@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from "react";
+import arvindLogo from "@/assets/arvind-logo.png";
 
 const partners = [
-  { name: "Arvind Limited", industry: "Textiles & Chemicals", logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ARVIND%20LIMITED-x3vNiumF8Vabzza1e7ySItYbvChLAy.png" },
+  { name: "Arvind Limited", industry: "Textiles & Chemicals", logo: arvindLogo },
   { name: "Shanti Inorgochem", industry: "Inorganic Chemicals", logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-3AlGwUJrPJT31orzH9eiryCOmvaM3I.webp" },
   { name: "AMCA", industry: "Cleaning Association", logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/AMCA-CmMIwz42gAOHngNYg3XkGJkJoJ2ynp.png" },
   { name: "Asiatic Colour", industry: "Dyes & Chemicals", logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/asiatic%20colour-GVeDyMQ8VTyCKYfl9CL8t8lpBwD9HZ.png" },
