@@ -6,6 +6,7 @@ import {
   Target, Lightbulb, Shield, Heart, ArrowRight, CheckCircle2
 } from "lucide-react";
 import { PartnersMarquee } from "@/components/PartnersMarquee";
+import skLogo from "@/assets/sk-group-logo.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -55,8 +56,8 @@ const aboutTabs = [
 function Logo() {
   return (
     <a href="#home" className="flex items-center gap-3">
-      <div className="w-11 h-11 rounded-xl gradient-hero flex items-center justify-center shadow-glow">
-        <span className="font-bold text-primary-foreground tracking-tight">SK</span>
+      <div className="w-12 h-12 rounded-xl bg-card border border-border flex items-center justify-center shadow-soft p-1.5">
+        <img src={skLogo} alt="SK Group logo" className="w-full h-full object-contain" />
       </div>
       <div className="leading-tight">
         <p className="font-bold text-foreground">SK Group</p>
