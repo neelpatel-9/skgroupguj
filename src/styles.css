@@ -60,6 +60,7 @@
   --gradient-hero: linear-gradient(135deg, oklch(0.55 0.19 245) 0%, oklch(0.62 0.17 220) 50%, oklch(0.72 0.16 200) 100%);
   --gradient-soft: linear-gradient(180deg, oklch(0.99 0.005 240) 0%, oklch(0.96 0.018 235) 100%);
   --gradient-accent: linear-gradient(135deg, oklch(0.55 0.19 245), oklch(0.72 0.16 200));
+  --gradient-highlight: linear-gradient(135deg, oklch(0.32 0.18 255), oklch(0.45 0.20 245));
   --shadow-glow: 0 20px 50px -20px color-mix(in oklab, oklch(0.55 0.19 245) 45%, transparent);
   --shadow-card: 0 8px 30px -12px color-mix(in oklab, oklch(0.18 0.04 250) 18%, transparent);
   --shadow-soft: 0 2px 12px -4px color-mix(in oklab, oklch(0.18 0.04 250) 10%, transparent);
@@ -80,6 +81,12 @@
   .gradient-hero { background: var(--gradient-hero); }
   .gradient-text {
     background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .highlight-text {
+    background: var(--gradient-highlight);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
