@@ -125,9 +125,9 @@ function Hero() {
             <Droplets className="w-3.5 h-3.5" /> Leading Chemical Industry Manpower Supplier
           </span>
           <h1 className="mt-5 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">
-            <span className="gradient-text">Manufacturing</span>,{" "}
-            <span className="gradient-text">Operating</span> &{" "}
-            <span className="gradient-text">Consulting</span> for STP, MEE & ZLD Plants
+            <span className="highlight-text">Manufacturing</span>,{" "}
+            <span className="highlight-text">Operating</span> &{" "}
+            <span className="highlight-text">Consulting</span> for STP, MEE & ZLD Plants
           </h1>
           <p className="mt-5 text-base sm:text-lg text-muted-foreground max-w-xl">
             End-to-end solutions for chemical industries — from building the plant to running it and optimizing performance.
