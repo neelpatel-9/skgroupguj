@@ -152,23 +152,31 @@ function Hero() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 fade-up">
+        <div className="orbit-stage relative w-full max-w-[520px] mx-auto aspect-square fade-up">
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[38%] aspect-square rounded-full gradient-hero opacity-10 blur-2xl" />
           {[
             { icon: Droplets, title: "Expert STP Solutions", sub: "Sewage Treatment Plant Consulting", desc: "Professional manpower and consulting services for efficient water treatment systems." },
             { icon: Factory, title: "MEE Plant Specialists", sub: "Multiple Effect Evaporator Systems", desc: "Skilled workforce for advanced evaporation and concentration processes." },
             { icon: Recycle, title: "ZLD Plant Experts", sub: "Zero Liquid Discharge Solutions", desc: "Complete manpower solutions for sustainable water management systems." },
             { icon: FlaskConical, title: "Process Engineering", sub: "End-to-end Plant Operations", desc: "From design and commissioning to day-to-day operating expertise." },
           ].map((c, i) => (
-            <div key={i} className="bg-card rounded-2xl p-5 border border-border shadow-card hover:-translate-y-1 transition-transform">
-              <div className="w-10 h-10 rounded-lg gradient-hero flex items-center justify-center mb-3 shadow-glow">
-                <c.icon className="w-5 h-5 text-primary-foreground" />
+            <div
+              key={i}
+              className="orbit-arm absolute left-1/2 top-1/2 w-[46%] -ml-[23%] -mt-[23%]"
+              style={{ animationDelay: `${-i * 6}s` }}
+            >
+              <div className="orbit-card bg-card rounded-2xl p-3 sm:p-4 border border-border shadow-card">
+                <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg gradient-hero flex items-center justify-center mb-2 shadow-glow">
+                  <c.icon className="w-4 h-4 text-primary-foreground" />
+                </div>
+                <h3 className="font-bold text-foreground text-xs sm:text-sm leading-tight">{c.title}</h3>
+                <p className="text-[10px] sm:text-[11px] text-primary font-semibold mt-0.5 leading-tight">{c.sub}</p>
+                <p className="hidden sm:block text-[11px] text-muted-foreground mt-1.5 leading-snug">{c.desc}</p>
               </div>
-              <h3 className="font-bold text-foreground">{c.title}</h3>
-              <p className="text-xs text-primary font-semibold mt-0.5">{c.sub}</p>
-              <p className="text-sm text-muted-foreground mt-2">{c.desc}</p>
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );
