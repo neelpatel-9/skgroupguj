@@ -232,6 +232,39 @@ function About() {
   );
 }
 
+const pillars = [
+  { id: "manufacturing", title: "Manufacturing", desc: "Design, build and commission STP, MEE & ZLD plants with precision engineering." },
+  { id: "operating", title: "Operating", desc: "Run plants safely with skilled manpower, SOPs and round-the-clock reliability." },
+  { id: "consulting", title: "Consulting", desc: "Optimize processes, ensure compliance and extend asset life through expert advice." },
+];
+
+function Pillars() {
+  return (
+    <section className="py-10 bg-surface border-y border-border">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid sm:grid-cols-3 gap-4">
+          {pillars.map((p, i) => (
+            <div
+              key={p.id}
+              className="group relative overflow-hidden rounded-2xl bg-card border border-border p-5 shadow-soft hover:shadow-card transition-all"
+              style={{ animationDelay: `${i * 100}ms` }}
+            >
+              <div className="absolute inset-x-0 top-0 h-1 gradient-hero scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
+              <div className="flex items-center gap-3 mb-2">
+                <div className="w-8 h-8 rounded-lg gradient-hero flex items-center justify-center shadow-glow">
+                  <span className="text-sm font-bold text-primary-foreground">{i + 1}</span>
+                </div>
+                <h3 className="text-lg font-bold text-foreground group-hover:text-primary transition-colors">{p.title}</h3>
+              </div>
+              <p className="text-sm text-muted-foreground leading-relaxed">{p.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function Services() {
   return (
     <section id="services" className="py-20">
