@@ -488,6 +488,7 @@ function Index() {
       <Nav />
       <main>
         <Hero />
+        <Pillars />
         <About />
         <Services />
         <Partners />
