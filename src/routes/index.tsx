@@ -61,7 +61,7 @@ function Logo() {
       </div>
       <div className="leading-tight">
         <p className="font-bold text-foreground">SK Group</p>
-        <p className="text-[11px] text-muted-foreground">Manpower & Consulting</p>
+        <p className="text-[11px] text-muted-foreground">Manufacturing · Operating · Consulting</p>
       </div>
     </a>
   );
@@ -125,10 +125,12 @@ function Hero() {
             <Droplets className="w-3.5 h-3.5" /> Leading Chemical Industry Manpower Supplier
           </span>
           <h1 className="mt-5 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">
-            Expert Consulting in <span className="gradient-text">STP, MEE & ZLD</span> Plants
+            <span className="gradient-text">Manufacturing</span>,{" "}
+            <span className="gradient-text">Operating</span> &{" "}
+            <span className="gradient-text">Consulting</span> for STP, MEE & ZLD Plants
           </h1>
           <p className="mt-5 text-base sm:text-lg text-muted-foreground max-w-xl">
-            Providing skilled manpower and professional consulting services for chemical industries with over 10 years of excellence.
+            End-to-end solutions for chemical industries — from building the plant to running it and optimizing performance.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a href="#services" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl gradient-hero text-primary-foreground font-semibold shadow-glow hover:opacity-90 transition">
@@ -184,10 +186,10 @@ function About() {
             Powering Chemical Industries with <span className="gradient-text">Expert Workforce</span>
           </h2>
           <p className="mt-5 text-muted-foreground">
-            Welcome to <strong className="text-foreground">SK GROUP</strong>, one of India's leading providers of consulting and operating services for STP, MEE & ZLD Plants. We deliver comprehensive solutions designed to give your company a competitive advantage.
+            Welcome to <strong className="text-foreground">SK GROUP</strong> — a trusted partner for <strong className="text-foreground">manufacturing</strong>, <strong className="text-foreground">operating</strong> and <strong className="text-foreground">consulting</strong> services for STP, MEE & ZLD Plants. We deliver comprehensive solutions designed to give your company a competitive advantage.
           </p>
           <p className="mt-4 text-muted-foreground">
-            Since our inception, SK GROUP has achieved commendable success in the design, installation, and commissioning of Sewage Treatment Plants & Multiple Effect Evaporator Plants — covering all mechanical, process, control, and operational aspects.
+            From design and fabrication to installation, commissioning and daily operations, SK GROUP covers every phase of your plant's lifecycle — mechanical, process, control, and operational.
           </p>
         </div>
 
@@ -222,6 +224,39 @@ function About() {
               <s.icon className="w-6 h-6 mx-auto text-primary mb-2" />
               <p className="text-2xl sm:text-3xl font-bold text-foreground">{s.value}</p>
               <p className="text-xs text-muted-foreground mt-1">{s.label}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+const pillars = [
+  { id: "manufacturing", title: "Manufacturing", desc: "Design, build and commission STP, MEE & ZLD plants with precision engineering." },
+  { id: "operating", title: "Operating", desc: "Run plants safely with skilled manpower, SOPs and round-the-clock reliability." },
+  { id: "consulting", title: "Consulting", desc: "Optimize processes, ensure compliance and extend asset life through expert advice." },
+];
+
+function Pillars() {
+  return (
+    <section className="py-10 bg-surface border-y border-border">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid sm:grid-cols-3 gap-4">
+          {pillars.map((p, i) => (
+            <div
+              key={p.id}
+              className="group relative overflow-hidden rounded-2xl bg-card border border-border p-5 shadow-soft hover:shadow-card transition-all"
+              style={{ animationDelay: `${i * 100}ms` }}
+            >
+              <div className="absolute inset-x-0 top-0 h-1 gradient-hero scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
+              <div className="flex items-center gap-3 mb-2">
+                <div className="w-8 h-8 rounded-lg gradient-hero flex items-center justify-center shadow-glow">
+                  <span className="text-sm font-bold text-primary-foreground">{i + 1}</span>
+                </div>
+                <h3 className="text-lg font-bold text-foreground group-hover:text-primary transition-colors">{p.title}</h3>
+              </div>
+              <p className="text-sm text-muted-foreground leading-relaxed">{p.desc}</p>
             </div>
           ))}
         </div>
@@ -410,7 +445,7 @@ function Footer() {
               <p className="text-xs opacity-70">Manpower & Consulting</p>
             </div>
           </div>
-          <p className="mt-4 text-sm opacity-70">India's trusted partner for STP, MEE, and ZLD plant manpower and consulting.</p>
+          <p className="mt-4 text-sm opacity-70">India's trusted partner for manufacturing, operating and consulting STP, MEE, and ZLD plants.</p>
         </div>
         <div>
           <p className="font-semibold mb-3">Services</p>
@@ -453,6 +488,7 @@ function Index() {
       <Nav />
       <main>
         <Hero />
+        <Pillars />
         <About />
         <Services />
         <Partners />
