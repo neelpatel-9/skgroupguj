@@ -125,23 +125,15 @@
   .orbit-arm {
     animation: orbit-spin 24s linear infinite;
   }
-  .orbit-card {
-    animation: orbit-counter 24s linear infinite;
-  }
-  .orbit-stage:hover .orbit-arm,
-  .orbit-stage:hover .orbit-card {
+  .orbit-stage:hover .orbit-arm {
     animation-play-state: paused;
   }
   @keyframes orbit-spin {
     from { transform: rotate(0deg) translate(var(--orbit-r)) rotate(0deg); }
     to { transform: rotate(360deg) translate(var(--orbit-r)) rotate(-360deg); }
   }
-  @keyframes orbit-counter {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(0deg); }
-  }
   @media (prefers-reduced-motion: reduce) {
-    .orbit-arm, .orbit-card { animation: none; }
+    .orbit-arm { animation: none; }
   }
 }
 
