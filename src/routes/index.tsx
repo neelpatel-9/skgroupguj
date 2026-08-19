@@ -61,7 +61,7 @@ function Logo() {
       </div>
       <div className="leading-tight">
         <p className="font-bold text-foreground">SK Group</p>
-        <p className="text-[11px] text-muted-foreground">Manpower & Consulting</p>
+        <p className="text-[11px] text-muted-foreground">Manufacturing · Operating · Consulting</p>
       </div>
     </a>
   );
