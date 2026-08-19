@@ -186,10 +186,10 @@ function About() {
             Powering Chemical Industries with <span className="gradient-text">Expert Workforce</span>
           </h2>
           <p className="mt-5 text-muted-foreground">
-            Welcome to <strong className="text-foreground">SK GROUP</strong>, one of India's leading providers of consulting and operating services for STP, MEE & ZLD Plants. We deliver comprehensive solutions designed to give your company a competitive advantage.
+            Welcome to <strong className="text-foreground">SK GROUP</strong> — a trusted partner for <strong className="text-foreground">manufacturing</strong>, <strong className="text-foreground">operating</strong> and <strong className="text-foreground">consulting</strong> services for STP, MEE & ZLD Plants. We deliver comprehensive solutions designed to give your company a competitive advantage.
           </p>
           <p className="mt-4 text-muted-foreground">
-            Since our inception, SK GROUP has achieved commendable success in the design, installation, and commissioning of Sewage Treatment Plants & Multiple Effect Evaporator Plants — covering all mechanical, process, control, and operational aspects.
+            From design and fabrication to installation, commissioning and daily operations, SK GROUP covers every phase of your plant's lifecycle — mechanical, process, control, and operational.
           </p>
         </div>
 
