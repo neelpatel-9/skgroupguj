@@ -125,10 +125,12 @@ function Hero() {
             <Droplets className="w-3.5 h-3.5" /> Leading Chemical Industry Manpower Supplier
           </span>
           <h1 className="mt-5 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">
-            Expert Consulting in <span className="gradient-text">STP, MEE & ZLD</span> Plants
+            <span className="gradient-text">Manufacturing</span>,{" "}
+            <span className="gradient-text">Operating</span> &{" "}
+            <span className="gradient-text">Consulting</span> for STP, MEE & ZLD Plants
           </h1>
           <p className="mt-5 text-base sm:text-lg text-muted-foreground max-w-xl">
-            Providing skilled manpower and professional consulting services for chemical industries with over 10 years of excellence.
+            End-to-end solutions for chemical industries — from building the plant to running it and optimizing performance.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a href="#services" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl gradient-hero text-primary-foreground font-semibold shadow-glow hover:opacity-90 transition">
