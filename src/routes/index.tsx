@@ -445,7 +445,7 @@ function Footer() {
               <p className="text-xs opacity-70">Manpower & Consulting</p>
             </div>
           </div>
-          <p className="mt-4 text-sm opacity-70">India's trusted partner for STP, MEE, and ZLD plant manpower and consulting.</p>
+          <p className="mt-4 text-sm opacity-70">India's trusted partner for manufacturing, operating and consulting STP, MEE, and ZLD plants.</p>
         </div>
         <div>
           <p className="font-semibold mb-3">Services</p>
