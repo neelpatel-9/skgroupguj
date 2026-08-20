@@ -38,7 +38,7 @@ const consulting = [
 
 const stats = [
   { icon: Award, value: "10+", label: "Years Experience" },
-  { icon: Building2, value: "25+", label: "Trusted Partners" },
+  { icon: Building2, value: "30+", label: "Trusted Partners" },
   { icon: Users, value: "200+", label: "Skilled Workers" },
 ];
 
