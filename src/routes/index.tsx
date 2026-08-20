@@ -12,10 +12,10 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "SK Group — Expert Manpower & Consulting for STP, MEE & ZLD Plants" },
-      { name: "description", content: "SK Group provides skilled manpower and consulting services for STP, MEE, ZLD, ETP, RO/UF, ATFD and Boiler operations across India's chemical industry." },
+      { title: "SK Group — Expert Manpower & Management for STP, MEE & ZLD Plants" },
+      { name: "description", content: "SK Group provides skilled manpower and management services for STP, MEE, ZLD, ETP, RO/UF, ATFD and Boiler operations across India's chemical industry." },
       { property: "og:title", content: "SK Group — STP, MEE & ZLD Manpower Experts" },
-      { property: "og:description", content: "10+ years powering chemical industries with expert workforce and consulting." },
+      { property: "og:description", content: "10+ years powering chemical industries with expert workforce and management." },
     ],
   }),
 });
