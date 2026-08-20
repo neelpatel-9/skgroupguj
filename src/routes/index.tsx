@@ -155,7 +155,7 @@ function Hero() {
         <div className="orbit-stage relative w-full max-w-[520px] mx-auto aspect-square fade-up">
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[38%] aspect-square rounded-full gradient-hero opacity-10 blur-2xl" />
           {[
-            { icon: Droplets, title: "Expert STP Solutions", sub: "Sewage Treatment Plant Consulting", desc: "Professional manpower and consulting services for efficient water treatment systems." },
+            { icon: Droplets, title: "Expert STP Solutions", sub: "Sewage Treatment Plant O&M", desc: "Professional manpower and O&M services for efficient water treatment systems." },
             { icon: Factory, title: "MEE Plant Specialists", sub: "Multiple Effect Evaporator Systems", desc: "Skilled workforce for advanced evaporation and concentration processes." },
             { icon: Recycle, title: "ZLD Plant Experts", sub: "Zero Liquid Discharge Solutions", desc: "Complete manpower solutions for sustainable water management systems." },
             { icon: FlaskConical, title: "Process Engineering", sub: "End-to-end Plant Operations", desc: "From design and commissioning to day-to-day operating expertise." },
