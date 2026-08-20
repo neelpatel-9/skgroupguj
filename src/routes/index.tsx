@@ -61,7 +61,7 @@ function Logo() {
       </div>
       <div className="leading-tight">
         <p className="font-bold text-foreground">SK Group</p>
-        <p className="text-[11px] text-muted-foreground">Manufacturing · Operating · Consulting</p>
+        <p className="text-[11px] text-muted-foreground">Manufacturing · Operation · Management</p>
       </div>
     </a>
   );
@@ -126,8 +126,8 @@ function Hero() {
           </span>
           <h1 className="mt-5 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">
             <span className="highlight-text">Manufacturing</span>,{" "}
-            <span className="highlight-text">Operating</span> &{" "}
-            <span className="highlight-text">Consulting</span> for STP, MEE & ZLD Plants
+            <span className="highlight-text">Operation</span> &{" "}
+            <span className="highlight-text">Management</span> for STP, MEE & ZLD Plants
           </h1>
           <p className="mt-5 text-base sm:text-lg text-muted-foreground max-w-xl">
             End-to-end solutions for chemical industries — from building the plant to running it and optimizing performance.
@@ -242,8 +242,8 @@ function About() {
 
 const pillars = [
   { id: "manufacturing", title: "Manufacturing", desc: "Design, build and commission STP, MEE & ZLD plants with precision engineering." },
-  { id: "operating", title: "Operating", desc: "Run plants safely with skilled manpower, SOPs and round-the-clock reliability." },
-  { id: "consulting", title: "Consulting", desc: "Optimize processes, ensure compliance and extend asset life through expert advice." },
+  { id: "operation", title: "Operation", desc: "Run plants safely with skilled manpower, SOPs and round-the-clock reliability." },
+  { id: "management", title: "Management", desc: "Optimize processes, ensure compliance and extend asset life through expert oversight." },
 ];
 
 function Pillars() {
@@ -283,7 +283,7 @@ function Services() {
             Comprehensive <span className="gradient-text">Manpower Solutions</span>
           </h2>
           <p className="mt-5 text-muted-foreground">
-            Specialized workforce and expert consulting services for STP, MEE, and ZLD plant operations in the chemical industry.
+            Specialized workforce and expert management services for STP, MEE, and ZLD plant operations in the chemical industry.
           </p>
         </div>
 
@@ -304,8 +304,8 @@ function Services() {
 
         <div className="mt-16 rounded-3xl gradient-hero p-8 sm:p-12 shadow-glow">
           <div className="text-center max-w-2xl mx-auto">
-            <h3 className="text-2xl sm:text-3xl font-bold text-primary-foreground">Expert Consulting Services</h3>
-            <p className="mt-2 text-primary-foreground/80">Beyond manpower, we provide strategic consulting</p>
+            <h3 className="text-2xl sm:text-3xl font-bold text-primary-foreground">Expert Management Services</h3>
+            <p className="mt-2 text-primary-foreground/80">Beyond manpower, we provide strategic management</p>
           </div>
           <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {consulting.map((c, i) => (
@@ -450,10 +450,10 @@ function Footer() {
             </div>
             <div>
               <p className="font-bold">SK Group</p>
-              <p className="text-xs opacity-70">Manpower & Consulting</p>
+              <p className="text-xs opacity-70">Operation & Management</p>
             </div>
           </div>
-          <p className="mt-4 text-sm opacity-70">India's trusted partner for manufacturing, operating and consulting STP, MEE, and ZLD plants.</p>
+          <p className="mt-4 text-sm opacity-70">India's trusted partner for manufacturing, operation and management of STP, MEE, and ZLD plants.</p>
         </div>
         <div>
           <p className="font-semibold mb-3">Services</p>
